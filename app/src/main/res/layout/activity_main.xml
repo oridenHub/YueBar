@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.pingan.yuebar.fragment.TitleBarFragment"
+        android:id="@+id/fl_title_bar"
+        tools:layout="@layout/fragment_title_bar">
+    </fragment>
+
+    <View
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/fl_title_bar"
+        android:background="@color/devide_line" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl_content"
+        android:layout_above="@+id/menu_line"
+        android:layout_below="@+id/title_line">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <RelativeLayout style="@style/ButtomBar">
+
+            <ImageButton
+                android:id="@+id/buttom_main"
+                style="@style/ButtomBarImgBtn"
+                android:background="@drawable/bar_main"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+
+        <RelativeLayout style="@style/ButtomBar">
+
+            <ImageButton
+                android:id="@+id/buttom_discover"
+                style="@style/ButtomBarImgBtn"
+                android:background="@drawable/bar_discover"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/ButtomBar">
+
+            <ImageButton
+                android:id="@+id/buttom_profile"
+                style="@style/ButtomBarImgBtn"
+                android:background="@drawable/bar_profile"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/menu_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_above="@id/menu_bar"
+        android:background="@color/devide_line" />
+
+</RelativeLayout>

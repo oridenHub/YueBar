@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">YueBar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_name_profile">我的</string>
+    <string name="title_name">周末去哪儿</string>
+    <string name="profile_setting">设置</string>
+
+</resources>
